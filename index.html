@@ -1,64 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>8BIT 1337.com</title>
-  <meta name="description" content="The internet home for Jason Gruetzmacher of Kitchener, Ontario"/>
-  <link href="css/styles.css" rel="stylesheet">
-  <link href="css/gradients.css" rel="stylesheet">
+	<meta name="description" content="The internet home for Jason Gruetzmacher of Kitchener, Ontario, Canada"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <title>8BIT 1337.com</title>
 </head>
-  <body class="">
-    <div class="wrapper">
-      <div class="graphics">
-        <div class="tower">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          width="1000px" height="429px" viewBox="0 0 1000 429">
-          <path class="path" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M0,424h176l7-204h-2v-3h2v-3h-2v-3h2v-3
-          c0,0-15.624-5.4-16-21c-0.307-12.746,12-18,12-18l1-27h-2v-3h7l1-6v-9l1-4V82l1-5V9h4v68l1,5v38l1,4v9l1,6h7v3h-2l1,27
-          c0,0,12.498,6.014,12,18c-0.662,15.954-16,21-16,21v3h2v3h-2v3h2v3h-2l6,204h512v-35c0,0-5.593-2.459-9-5
-          c-0.945-0.705-6.091-0.363-8,0c-2.969,0.565-8.961,3.528-12-1c-3.87-5.767,3.521-9.102,2.5-12c-0.664-1.886-6.895-2.312-7.5-6
-          c-0.944-5.75,1.433-7.821,4-8.75c2.938-1.062,4.564-3.043,6-4.25c2.03-1.707,0.5-6.25,6-9c5.087-2.544,7.651,2.158,10,2
-          c2.847-0.192,5.188-5,10-5c6.667,0,6.515,4.066,9,5c3.12,1.173,7.43-2.11,13,1c4.812,2.688,5.329,6.7,7,9
-          c1.398,1.926,5.688,1.287,8.25,5.5c2.812,4.625-0.905,8.374-1.625,11.438c-0.538,2.29,3.812,6.688,0.375,10.062
-          c-9.463,9.29-16.758,2.181-22,4c-3.466,1.203-8,3-8,3v35h277"/>
-          <path class="path" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M19,223.711c0-13.528,12.132-10.846,15.562-14.743
-          c2.778-3.156-0.977-8.806,9.01-13.925c7.918-4.059,9.674,1.023,13.105,0.819c4.455-0.264,3.276-6.718,14.744-6.553
-          c12.664,0.182,11.245,8.414,14.744,10.648c3.021,1.929,7.917-2.126,13.924,4.096c3.822,3.958,1.291,7.436,2.458,9.829
-          c2.163,4.438,14.744,0.938,14.744,13.924c0,12.175-13.481,8.295-17.201,10.648c-3.622,2.293-4.367,9.303-13.105,11.468
-          c-7.989,1.978-9.472-3.97-13.924-4.096c-4.991-0.144-5.485,8.613-18.839,6.553c-12.285-1.893-12.263-9.115-16.382-12.286
-          C32.874,236.273,19,238.591,19,223.711z"/>
-          <path class="path" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M336.081,143.938
-          c-3.944,3.037-3.922,9.953-15.687,11.765c-12.787,1.973-13.26-6.413-18.04-6.274c-4.264,0.121-5.684,5.815-13.334,3.921
-          c-8.367-2.072-9.081-8.785-12.549-10.98C272.91,140.117,260,143.832,260,132.174c0-12.436,12.047-9.084,14.118-13.334
-          c1.117-2.292-1.307-5.621,2.353-9.412c5.752-5.958,10.441-2.075,13.333-3.921c3.351-2.14,1.992-10.022,14.118-10.197
-          c10.981-0.158,9.853,6.022,14.118,6.275c3.286,0.195,4.967-4.671,12.55-0.784c9.563,4.902,5.968,10.312,8.627,13.333
-          c3.286,3.732,14.902,1.164,14.902,14.119C354.121,142.5,340.835,140.28,336.081,143.938z"/>
-        </svg>
-      </div>
+
+<!--
+<button type="button" class="btn btn-big dark-blue-bordered-btn">Big Button</button>
+<button type="button" class="btn btn-big dark-blue-btn">Download</button>
+<button type="button" class="btn dark-blue-bordered-btn normal-btn">Small Button</button>
+<button type="button" class="btn yellow-btn normal-btn">Download</button>
+<button type="button" class="btn green-btn normal-btn">Demo</button>
+-->
+
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">8BIT 1337.com</a>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#microleague">Micro League</a></li>
+                    <li><a href="#xldb">XLDB</a></li>
+                    <li><a href="#tbxl">TurboBasic XL</a></li>
+                    <!-- <li><a class="external" href="https://www.facebook.com/templatemo" target="_blank">External</a></li> -->
+                </ul>
+            </nav>
+        </div>
     </div>
 
-    <header>
-      <nav class="website-nav">
-        <ul>
-          <li><a class="home-link" href="index.html">HOME</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container">
+        <section class="col-md-12 content" id="home">
+           <div class="col-lg-6 col-md-6 content-item">
+               <img src="images/1.jpg" alt="Image" class="tm-image">
+           </div>
+           <div class="col-lg-6 col-md-6 content-item content-item-1 background">
+				<h2 class="main-title text-center dark-blue-text">Welcome</h2>
+				<p>"Who am I?  Why am I here?  What is my purpose in life?  What do I mean by who am I?  Calm down, get a grip now...." Douglas Adams</p>
+		   		<p>I'm just a guy who is interested in a bunch of things including sharing them on the internet.</p>
+		   		<p>Enjoy!  Or don't.  Life goes on regardless... ;)</p>
 
-    <div class="message">
-      <div class="text">
-        <h1>8BIT 1337.com</h1>
-      </div>
+
+		   		, includinas well as a guy interested in just creating and exploring 7uy6hn7fxz plan on this being my home in cyberspace, where I can play around with how the furniture is arranged and share my interests as I see fit.
+				<p>Projects I intend to explore on this site:</p>
+					<li class='list'>XLDB: </li>
+					<li class='list'>TurboBasic XL:  </li>
+				</ul>
+
+           </div>
+       </section>
+
+       <section class="col-md-12 content padding" id="microleague">
+        <div class="col-lg-6 col-md-6 col-md-push-6 content-item">
+           <img src="images/2.jpg" alt="Image" class="tm-image">
+       </div>
+       <div class="col-lg-6 col-md-6 col-md-pull-6 content-item background flexbox">
+           <h2 class="section-title">MicroLeague Baseball</h2>
+           <p class="section-text">This was my favourite baseball game growing up.  Which makes it a great place to start a pet project:</p>
+           <ul class="dark-blue-text">
+               <li>+ Can I automate team creation using modern tech?</li>
+               <li>+ Can I re-write the game to use modern statistics?</li>
+               <li>+ Can I find the original authors?</li>
+           </ul>
+       </div>
+
+   </section>
+
+
+   <section class="col-md-12 content" id="xldb">
+       <div class="col-lg-6 col-md-6 content-item">
+           <img src="images/3.jpg" alt="Image" class="tm-image">
+       </div>
+       <div class="col-lg-6 col-md-6 content-item background flexbox">
+           <h2 class="section-title">XL Database</h2>
+           <p>I'd like to organize all my Atari 8bit software inside a MySQL database and make it available on the web.  I know this already exists in many forms already, but once this is accomplished I want to have some fun analyzing what I end up with using something like Tableau.</p>
+       </div>
+   </section>
+
+
+   <section class="col-md-12 content" id="tbxl">
+       <div class="col-lg-6 col-md-6 col-md-push-6 content-item">
+           <img src="images/4.jpg" alt="Image" class="tm-image">
+       </div>
+       <div class="col-lg-6 col-md-6 col-md-pull-6 content-item background flexbox">
+           <h2 class="section-title">TurboBasic XL</h2>
+           <p class="margin-b-25">For anything I have or will program in TBXL, either as part of the NOMAM Basic Ten-Liners Contest or just for fun</p>
+
+           <!--<div class="row"> -->
+           <form method="post" name="contact-form" class="contact-form">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name..." required>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pad-l-3">
+                <div class="form-group contact-field">
+                    <input name="email" type="email" class="form-control" id="email" placeholder="Your Email..." required>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group contact-field">
+                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Your Subject..." required>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group contact-field">
+                    <textarea name="message" rows="5" class="form-control" id="message" placeholder="Write your message..." required></textarea>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group margin-b-0">
+                    <button type="submit" id="form-submit" class="btn no-bg btn-contact">Submit</button>
+                </div>
+            </div>
+        </form>
+        <!--</div> -->
+        <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+
     </div>
-    <div class="push"></div>
-  </div>
 
-  <footer>
-    <p class="footer-contents">Designed and developed in Kitchener, ON</p>
-  </footer>
+</section>
 
-  <script src="js/set-background.js"></script>
+<footer class="col-md-12 content" id="externals">
+ <div class="col-lg-6 col-md-6 last">
+   <img src="images/5.png" alt="Image" class="tm-image">
+</div>
+<div class="col-lg-6 col-md-6 background last about-text-container">
+   <h2 class="section-title">About This Website</h2>
+   <p class="about-text">Puzzle Template is brought to you by templatemo. Sed imperdiet quis ipsum a vulputate. Suspendisse sit amet nibh mi. In quis sapien a metus interdum hendrerit.</p>
+</div>
+</footer>
+
+</div>
+
+<div class="text-center footer">
+	<div class="container">
+		Copyright 2016 Jason Gruetzmacher | Based on the following <a href="http://www.templatemo.com/tm-477-puzzle" target="_parent" title="Puzzle Template">design</a>
+    </div>
+</div>
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+
+<script>
+
+// Check scroll position and add/remove background to navbar
+function checkScrollPosition() {
+    if($(window).scrollTop() > 50) {
+      $(".fixed-header").addClass("scroll");
+  } else {
+      $(".fixed-header").removeClass("scroll");
+  }
+}
+
+$(document).ready(function () {
+    // Single page nav
+    $('.fixed-header').singlePageNav({
+        offset: 59,
+        filter: ':not(.external)',
+        updateHash: true
+    });
+
+    checkScrollPosition();
+
+    // nav bar
+    $('.navbar-toggle').click(function(){
+        $('.main-menu').toggleClass('show');
+    });
+
+    $('.main-menu a').click(function(){
+        $('.main-menu').removeClass('show');
+    });
+});
+
+$(window).on("scroll", function() {
+    checkScrollPosition();
+});
+</script>
 </body>
 </html>
