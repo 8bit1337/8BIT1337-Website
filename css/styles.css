@@ -1,11 +1,3 @@
-/* 
-
-Puzzle Template
-
-http://www.templatemo.com/tm-477-puzzle 
-
-*/
-
 a,
 a:hover,
 a:focus {
@@ -350,7 +342,7 @@ p {
 }
 
 @media screen and (max-width:991px){
-
+   
     .content-item {
         min-height: inherit !important;
     }
