@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+	<meta name="description" content="The internet home of Jason '8BIT 1337' Gruetzmacher"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<link rel="icon" type="image/png" href="../images/favicon32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="../images/favicon16.png" sizes="16x16" />
+    <title>8BIT 1337.com, the internet home of Jason Gruetzmacher</title>
+</head>
+
+<body>
+<div class="fixed-header">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle">
+				<span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">8BIT 1337</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+	<section class="col-md-12 content" id="home"></section>
+
+	<section class="col-md-12 content" id="content">
+		<div class="col-lmd-12 content-item background">
+			<h1 class="section-title">Magic: The Gathering Deck Construction</h1>
+			<p class="section-text">One of the hobbies I've come to enjoy again over the last couple of years (after more than a 20 year hiatus) is playing Magic: The Gathering (MTG)</p>
+			<p>If you're unfamiliar with MTG (and I'm not surprised if you aren't), it's a collectible card game where you adopt the role of a wizard looking to defeat your opponent(s) on a field of battle, by summoning creatures and casting spells to both attack and defend yourself.  You do this by drawing an initial hand of 7 out of a deck of at least 40, 60, or 100 cards (depending on what style of Magic you are playing).<p>
+			<p>One of the many challenges of building a deck is ensuring that you have enough land available to you in order to cast spells, as land is your primary source for mana (mana being the currency of Magic, in that you pay mana in order to cast spells).  There are six different types of mana (5 colours plus colourless), and although there are other sources for mana available to you, you get to play one land card per turn for free.  Other mana sources cost mana in order to put them into play.</p>
+			<p>There are lots of online resources available to help you decide how much mana to put into a deck, but I thought it would be fun to create my own.<p>
+			<p>To this end I decided to put my deck 'Dragons!' to the test.  It is a 63 card black/red deck (meaning I need both black mana and red mana available to me in order to cast spells).  The listing on the right shows how many of each card the deck contains, as well as it's 'casting' cost ({B} represents black mana, {R} represents red mana, {3} represents 3 of any colour).</p>
+			<p>You can see that out of 63 cards, 23 are land cards.  Right now I'm not interested in what the lands produce, I'm just going to look at how having 23 lands affects my initial hand and subsequent draws</p>
+		</div>
+	</section>
+
+	<footer class="col-md-12 content" id="externals">
+		<div class="col-lg-6 col-md-6 last">
+			<img src="../images/footer.jpg" alt="Image" class="tm-image">
+		</div>
+		<div class="col-lg-6 col-md-6 background last about-text-container">
+			<div class="container">
+				<p>Copyright 2016,2018 Jason Gruetzmacher</p>
+				<p>Based on the following <a href="http://www.templatemo.com/tm-477-puzzle" target="_parent" title="Puzzle Template">design</a></p>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.singlePageNav.min.js"></script>
+
+<script>
+
+// Check scroll position and add/remove background to navbar
+function checkScrollPosition() {
+    if($(window).scrollTop() > 50) {
+      $(".fixed-header").addClass("scroll");
+  } else {
+      $(".fixed-header").removeClass("scroll");
+  }
+}
+
+$(document).ready(function () {
+    // Single page nav
+    $('.fixed-header').singlePageNav({
+        offset: 59,
+        filter: ':not(.external)',
+        updateHash: true
+    });
+
+    checkScrollPosition();
+
+    // nav bar
+    $('.navbar-toggle').click(function(){
+        $('.main-menu').toggleClass('show');
+    });
+
+    $('.main-menu a').click(function(){
+        $('.main-menu').removeClass('show');
+    });
+});
+
+$(window).on("scroll", function() {
+    checkScrollPosition();
+});
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-88449141-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>
