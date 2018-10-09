@@ -10,6 +10,33 @@
 	<link rel="icon" type="image/png" href="../images/favicon32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="../images/favicon16.png" sizes="16x16" />
     <title>8BIT 1337.com, the internet home of Jason Gruetzmacher</title>
+
+    <style>
+	* {
+	    box-sizing: border-box;
+	}
+
+	.columnL {
+	    float: left;
+	    width: 30%;
+	}
+
+	.columnR {
+	    float: left;
+	    width: 70%;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+	    content: "";
+	    display: table;
+	    clear: both;
+	}
+
+	.imgFit {
+
+	}
+</style>
 </head>
 
 <body>
@@ -21,23 +48,38 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">8BIT 1337</a>
+            <a class="navbar-brand" href="/index.html">8BIT 1337</a>
         </div>
     </div>
 </div>
 
 <div class="container">
+	<!-- I need this empty section to make sure my content doesn't overlap my header-->
 	<section class="col-md-12 content" id="home"></section>
 
 	<section class="col-md-12 content" id="content">
 		<div class="col-lmd-12 content-item background">
 			<h1 class="section-title">Magic: The Gathering Deck Construction</h1>
 			<p class="section-text">One of the hobbies I've come to enjoy again over the last couple of years (after more than a 20 year hiatus) is playing Magic: The Gathering (MTG)</p>
-			<p>If you're unfamiliar with MTG (and I'm not surprised if you aren't), it's a collectible card game where you adopt the role of a wizard looking to defeat your opponent(s) on a field of battle, by summoning creatures and casting spells to both attack and defend yourself.  You do this by drawing an initial hand of 7 out of a deck of at least 40, 60, or 100 cards (depending on what style of Magic you are playing).<p>
-			<p>One of the many challenges of building a deck is ensuring that you have enough land available to you in order to cast spells, as land is your primary source for mana (mana being the currency of Magic, in that you pay mana in order to cast spells).  There are six different types of mana (5 colours plus colourless), and although there are other sources for mana available to you, you get to play one land card per turn for free.  Other mana sources cost mana in order to put them into play.</p>
-			<p>There are lots of online resources available to help you decide how much mana to put into a deck, but I thought it would be fun to create my own.<p>
-			<p>To this end I decided to put my deck 'Dragons!' to the test.  It is a 63 card black/red deck (meaning I need both black mana and red mana available to me in order to cast spells).  The listing on the right shows how many of each card the deck contains, as well as it's 'casting' cost ({B} represents black mana, {R} represents red mana, {3} represents 3 of any colour).</p>
-			<p>You can see that out of 63 cards, 23 are land cards.  Right now I'm not interested in what the lands produce, I'm just going to look at how having 23 lands affects my initial hand and subsequent draws</p>
+			<p class="section-text">If you're unfamiliar with MTG (and I'm not surprised if you aren't), it's a collectible card game where you adopt the role of a wizard looking to defeat your opponent(s) by casting spells to both attack and defend. You start the game by drawing an initial hand of 7 cards, and draw one additional card each term.</p>
+			<p class="section-text">In order to cast spells you use mana. The main source of mana is land cards, and so one of the many challenges in building a deck is ensuring that you have enough land available in your opening hand and on subsequent turns to ensure you can cast small spells early and bigger spells as the match progresses.</p>
+			<div class="col-lg-4 col-md-4 content-item">
+				<p class="section-text">There are lots of online resources available to help you decide how much land to put into a deck, but I thought it would be fun to mess around with this on my own, using Python and Tableau.</p>
+				<p class="section-text">The deck I chose I've listed in this post: it is a 63 card Red and Black deck, with 21 creatures, 19 spells, and 23 lands.</p>
+				<p class="section-text">The 'casting cost' of each card lets you know the type and quantity of mana required to cast it. As you can see in the listing, land has no casting cost: you simply get to play one 'free' each turn.</p>
+				<p class="section-text">For example, 'Bladewing the Risen' requires two black {B} mana, two red {R} mana, and then three additional mana of any colour.</p>
+				<p class="section-text">It should be noted that in addition to the 23 lands listed, there are 7 spells that either provide mana or reduce the cost of spells. Those 7 spells require mana of any colour, so it's not the type of mana that is drawn that is important, simply that we draw enough mana.</p>
+				<p class="section-text">The first thing I decided to do was to experiment with how many lands I should expect in my opening draw of seven. To do this I wrote a Python script that shuffles the deck 20,000 times, and then counts the number of lands in the opening draw.</p>
+			</div>
+			<div class="col-lg-8 col-md-8 content-item">
+				<img src="../images/decklist.png" alt="List of cards in Dragons! deck" class="tm-image">
+			</div>
+			<p class="section-text">&nbsp;</p>
+			<p class="section-text">The results of that script are listed below. Note that if you draw too few lands in your opening hand you can mulligan and re-draw seven cards (if you mulligan a second time you draw one fewer card to start, which is a definite disadvantage).</p>
+			<img src="../images/opening-hand.png" alt="Opening hand results" class="tm-image">
+			<p class="section-text">I will always mulligan if I have less than 2 lands in my opening hand, which occurred in 18.6% of the simulations (almost 1 in 5). The odds of me having less than 2 lands twice in a row would be 3.5%, which I'm comfortable with.</p>
+			<p class="section-text">More than 50% of the time I should draw either 2 or 3 lands which is a reasonable sweet spot in my opinion. I might be more comfortable if I was more likely to draw three versus two lands, but I'm wary of putting too many lands in the deck overall (as I do still need to cast creatures and spells, and adding lands also decreases the chances I'll draw what I truly need to win).</p>
+			<p class="section-text">Well that's it for this entry - next time I'll dive into my land count a little further by looking at subsequent draws and seeing how long it takes me to get to a given number of land cards in play.</p>
 		</div>
 	</section>
 
